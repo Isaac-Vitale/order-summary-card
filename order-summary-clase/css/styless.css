@@ -34,7 +34,9 @@ body{
     font-size: 30px;
     margin-bottom: 20px;
     animation-name: titulo;
-    animation-duration: 2s
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
 }
 
 .text-contenido p.subtitulo{
@@ -75,6 +77,11 @@ body{
 .plan-box a{
     font-weight: 700;
     color: rgb(43, 44, 110);
+    transition: all 0.1s;
+}
+
+.plan-box a:hover{
+    color: rgb(92, 35, 226);
 }
 
 a.btn1{
@@ -83,28 +90,53 @@ a.btn1{
     font-weight: 900;
     color: white;
     background-color: rgb(86, 44, 201);
-    padding: 20px 0;
+    padding: 15px 0;
     border-radius: 20px;
     margin: 30px;
-    transition: background-color 0.5s;
+    transition: all 0.5s;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2)
     
 }
 
 a.btn1:hover{
-    background-color: rgb(67, 34, 158);
-    
+    background-color: rgb(49, 25, 117);
+    color: rgb(154, 95, 209);
+    /* padding-top: 20px;
+    width: 370px;
+    height: 60px; */
 }
 
 a.btn2{
     color: rgb(173, 173, 173);
     text-decoration: none;
     font-weight: 900;   
+    transition: color 0.2s;
 }
 
-/* @keyframes titulo{
-    0%{left: 0px;}
-    25%{left: 25px;}
-} */
+a.btn2:hover{
+    color: rgb(32, 32, 32);
+    
+}
+
+@keyframes titulo{
+   0%{
+       margin-left: 10%;
+       transform: rotate(-5deg);
+   }
+
+   50%{
+       color: rgb(40, 18, 138);
+       margin-right: 20%;
+       transform: rotate(5deg);
+   }
+
+   100%{
+        color: rgb(39, 36, 70);
+        margin-left: 10%;
+        transform: rotate(-5deg);
+
+   }
+}
 
 @media only screen and (max-width: 375px){
     
