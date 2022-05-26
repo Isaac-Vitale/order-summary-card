@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgb(216, 216, 216);
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.2)
+}
+
+.text-contenido{
+    padding: 10px;
+    text-align: center;
+}
+
+.titulo{
+    color: rgb(39, 36, 70);
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation-name: titulo;
+    animation-duration: 2s
+}
+
+.text-contenido p.subtitulo{
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.plan-box{
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan-box-izquierda{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.plan-box-izquierda div{
+    margin-left: 20px;
+}
+
+.plan-box-izquierda div h5{
+    font-weight: 900;
+    font-size: 15px;
+    color: rgb(26, 24, 37);
+}
+
+.plan-box-izquierda div p{
+    font-size: 14px;
+    color: rgb(133, 133, 133);
+}
+
+.plan-box a{
+    font-weight: 700;
+    color: rgb(43, 44, 110);
+}
+
+a.btn1{
+    display: block;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(86, 44, 201);
+    padding: 20px 0;
+    border-radius: 20px;
+    margin: 30px;
+    transition: background-color 0.5s;
+    
+}
+
+a.btn1:hover{
+    background-color: rgb(67, 34, 158);
+    
+}
+
+a.btn2{
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    font-weight: 900;   
+}
+
+/* @keyframes titulo{
+    0%{left: 0px;}
+    25%{left: 25px;}
+} */
+
+@media only screen and (max-width: 375px){
+    
+    body{
+        font-size: 14px;
+    }
+    
+    .container{
+        max-width: 90%;
+    }
+
+    .titulo{
+        font-size: 23px;
+    }
+
+    div.plan-box{
+        padding: 12px;
+    }
+
+    .plan-box-izquierda div{
+        margin-left: 10px;
+    }
+
+    a.btn1,
+    a.btn2,
+    .plan-box a{
+        font-size: 13px;
+    }
+}
