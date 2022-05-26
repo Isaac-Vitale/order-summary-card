@@ -100,7 +100,8 @@ a.btn1{
 
 a.btn1:hover{
     background-color: rgb(49, 25, 117);
-    color: rgb(154, 95, 209);
+    color: rgb(230, 203, 255);
+    font-size: 18px;
     /* padding-top: 20px;
     width: 370px;
     height: 60px; */
